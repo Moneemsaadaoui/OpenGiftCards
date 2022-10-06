@@ -1,0 +1,77 @@
+.herocard {
+    max-width: 500px;
+    min-height: 200px;
+    margin: 10px;
+    border: none;
+}
+
+
+.title {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes animatedBackground {
+    from {
+
+        background-position: 50% 0;
+    }
+
+    20% {
+        background-position: 15% 0;
+
+    }
+
+    50% {
+        background-position: 2% 0;
+    }
+
+    70% {
+        background-position: 50% 0;
+    }
+
+    to {
+        background-position: 30% 15%;
+    }
+}
+
+.animate-area {
+    filter: blur(1.5px);
+    -webkit-filter: blur(1.5px);
+    opacity: 90%;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 60s linear infinite alternate;
+}
+
+.pill {
+    background-color: white;
+    border: none;
+    font-family: 'montserrat';
+    font-weight: bold;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 16px;
+}
+
+.wrapper {
+    background-color: white;
+    border-radius: 18px !important;
+}
+
+.cardBackground {
+    cursor: pointer;
+
+    border-radius: 18px !important;
+    background-size: cover;
+    height: 60vh;
+}
